@@ -5,13 +5,8 @@ export default function Mainicon() {
       <p className="big-temperature">
         <span id="degree">18</span>
         <sup>
-          <a href="" className="celcium">
-            °C
-          </a>{" "}
-          |{" "}
-          <a href="" className="farengeit">
-            F
-          </a>
+          <button className="celcium">°C</button>|
+          <button className="farengeit">F</button>
         </sup>
       </p>
     </div>

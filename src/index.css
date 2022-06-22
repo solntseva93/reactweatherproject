@@ -23,6 +23,13 @@ sup {
   font-size: 50px;
   font-weight: bold;
 }
+.big-temperature button {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  color: #0a58ca;
+}
 .big-city {
   font-size: 30px;
   font-weight: bold;

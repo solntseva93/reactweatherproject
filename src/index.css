@@ -1,0 +1,62 @@
+p {
+  margin-bottom: 0;
+}
+sup {
+  font-weight: normal;
+  font-size: 30px;
+}
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.item {
+  background: rgba(0 0 139 / 15%);
+}
+.big-emoji,
+.big-temperature {
+  display: inline-block;
+}
+.big-emoji {
+  font-size: 50px;
+}
+.big-temperature {
+  font-size: 50px;
+  font-weight: bold;
+}
+.big-city {
+  font-size: 30px;
+  font-weight: bold;
+}
+.card {
+  text-align: center;
+}
+.card-title {
+  font-size: 15px;
+}
+.small-emoji {
+  font-size: 30px;
+}
+.small-temperature {
+  font-size: 16px;
+}
+.btn-primary {
+  background: darkblue;
+}
+.celcium,
+.farengeit {
+  text-decoration: none;
+  cursor: pointer;
+}
+.mainIcon img {
+  max-width: 50px;
+}
+.mainIcon img,
+.mainIcon p {
+  display: inline-block;
+  vertical-align: middle;
+}
+#forecast img {
+  max-width: 50px;
+  display: block;
+  margin: 0 auto;
+}

@@ -23,7 +23,7 @@ export default function WeatherDescr(props) {
       <p className="big-city text-end">{weatherDescr.city}</p>
       <p className="description text-muted text-end">
         <span id="today">
-          {days[date.getDay()]},{date.getHours()}:{date.getMinutes()}
+          {days[date.getDay()]}, {date.getHours()}:{date.getMinutes()}
         </span>
         <br />
         <span id="weather" className="text-capitalize">

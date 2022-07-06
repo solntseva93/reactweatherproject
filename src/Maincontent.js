@@ -22,8 +22,6 @@ export default function Maincontent() {
     setStage(true);
   }
 
-  console.log(response);
-
   function searchFunc(e) {
     e.preventDefault();
     let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${apiKey}&units=metric`;
@@ -74,7 +72,11 @@ export default function Maincontent() {
         </form>
         <div className="item p-4 pb-5">
           <div className="row mb-3">
-            <Mainicon responseDate={response} />
+            <Mainicon
+              temperature={Math.round(response?.main?.temp)}
+              iconID={response?.weather[0]?.icon}
+              iconAlt={response?.weather[0]?.description}
+            />
             <WeatherDescr responseDate={response} />
           </div>
           <div className="row" id="forecast"></div>
@@ -85,7 +87,7 @@ export default function Maincontent() {
     axios.get(apiURL).then(getWeatherData);
     return (
       <PacmanLoader
-        color="#36d7b7"
+        color="#d9d9ee"
         loading={true}
         cssOverride={properties}
         size={50}

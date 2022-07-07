@@ -24,7 +24,7 @@ export default function Maincontent() {
 
   function searchFunc(e) {
     e.preventDefault();
-    let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${apiKey}&units=metric`;
+    apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${apiKey}&units=metric`;
     axios.get(apiURL).then(getWeatherData);
   }
 
@@ -35,7 +35,7 @@ export default function Maincontent() {
   function getCurrentLocation(e) {
     e.preventDefault();
     navigator.geolocation.getCurrentPosition(function (position) {
-      let apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+      apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
       axios.get(apiURL).then(getWeatherData);
       console.log(apiURL);
     });

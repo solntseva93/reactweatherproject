@@ -7,6 +7,9 @@ export default function WeatherDescr(props) {
   };
   let date = new Date();
 
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+
   let days = [
     "Sunday",
     "Monday",
@@ -22,7 +25,8 @@ export default function WeatherDescr(props) {
       <p className="big-city text-end">{weatherDescr.city}</p>
       <p className="description text-muted text-end">
         <span id="today">
-          {days[date.getDay()]}, {date.getHours()}:{date.getMinutes()}
+          {days[date.getDay()]}, {hours < 10 ? `0${hours}` : hours}:
+          {minutes < 10 ? `0${minutes}` : minutes}
         </span>
         <br />
         <span id="weather" className="text-capitalize">

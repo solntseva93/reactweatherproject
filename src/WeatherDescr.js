@@ -5,7 +5,6 @@ export default function WeatherDescr(props) {
     wind: props.responseDate.wind.speed,
     city: props.responseDate.name,
   };
-  //console.log(props.responseDate);
   let date = new Date();
 
   let days = [

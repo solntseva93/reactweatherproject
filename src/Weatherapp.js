@@ -13,8 +13,8 @@ const properties = {
 export default function Weatherapp() {
   const [stage, setStage] = useState(false);
   const [city, setCity] = useState("Paris");
-  const [response, setResponse] = useState(null);
-  const [responseForecast, setResponseForecast] = useState(null);
+  const [response, setResponse] = useState();
+  const [responseForecast, setResponseForecast] = useState();
 
   let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
@@ -64,12 +64,6 @@ export default function Weatherapp() {
     );
   }
 
-  //<Maincontent data={response.data} />
-  //<Forecast data={responseForecast.data.daily} />
-
-  //console.log(response);
-  //console.log(responseForecast);
-  //
   if (response != null) {
     return (
       <div>

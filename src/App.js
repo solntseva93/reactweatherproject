@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import Maincontent from "./Maincontent";
+import Weatherapp from "./Weatherapp";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
       <div className="w-50 mx-auto">
         <div className="tested"></div>
         <div className="border rounded-3 p-3">
-          <Maincontent />
+          <Weatherapp />
         </div>
         <p>
           <a

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Icon from "./Icon.js";
 
 export default function Mainicon({ temperature, iconID, iconAlt }) {
   const [tempr, setTempr] = useState(temperature);
@@ -41,11 +42,7 @@ export default function Mainicon({ temperature, iconID, iconAlt }) {
   return (
     <div className="col-md-6 col-xs-12 mainIcon">
       <p className="big-temperature">
-        <img
-          src={require(`@bybas/weather-icons/production/fill/all/${iconsMas[iconID]}.svg`)}
-          alt={iconAlt}
-          width={"100px"}
-        />
+        <Icon iconID={iconID} iconAlt={iconAlt} />
         <span id="degree">{tempr}</span>
         <sup>
           <button className="celcium" onClick={celciumToFareng}>

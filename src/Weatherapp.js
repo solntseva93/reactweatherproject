@@ -64,7 +64,7 @@ export default function Weatherapp() {
     );
   }
 
-  if (response != null) {
+  if (response != null && responseForecast != null) {
     return (
       <div>
         <form className="mb-3" onSubmit={searchFunc}>
